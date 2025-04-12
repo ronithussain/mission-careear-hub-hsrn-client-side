@@ -2,9 +2,20 @@ import React from 'react';
 import { FaFacebook, FaHome, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { LuPhoneCall } from 'react-icons/lu';
 import { RxCross1 } from 'react-icons/rx';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../../../hooks/useAuth';
 
 const Navbar = () => {
+    const { user, logOut } = useAuth();
+
+    const handleLogout = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
     const navOptions = <>
         <li><NavLink className="hover:text-[#FF6900] font-medium" to="/">HOME</NavLink></li>
         <li><NavLink className="hover:text-[#FF6900] font-medium" to="/aboutUs">ABOUT US</NavLink></li>
@@ -48,13 +59,25 @@ const Navbar = () => {
                                 <p>+000153779</p>
                             </button>
                         </div>
-                        <button className="btn px-4 py-2 text-black font-semibold rounded-md bg-[#FFF9F9] hover:bg-[#445F65] hover:text-white transition-all duration-500">
-                            Sign In
-                        </button>
+                        {/* conditional */}
+                        {
+                            user ?
+                                <>
 
-                        <button className="btn px-4 py-2 text-white font-semibold rounded-md bg-[#F15A29] hover:bg-[#445F65] transition-all duration-500">
-                            Sign Out
-                        </button>
+                                    <button onClick={handleLogout} className="btn px-4 py-2 text-white font-semibold rounded-md bg-[#F15A29] hover:bg-[#445F65] transition-all duration-500">
+                                        Sign Out
+                                    </button>
+
+                                </> :
+                                <>
+                                    <Link to="login" className="btn px-4 py-2 text-black font-semibold rounded-md bg-[#FFF9F9] hover:bg-[#445F65] hover:text-white transition-all duration-500">
+                                        Sign In
+                                    </Link>
+                                </>
+                        }
+                        <Link to="signUp" className="btn px-4 py-2 text-white font-semibold rounded-md bg-[#F15A29] hover:bg-[#445F65] transition-all duration-500">
+                            Sign Up
+                        </Link>
                     </div>
                 </div>
 
@@ -96,7 +119,6 @@ const Navbar = () => {
                         </div>
                     </ul>
                 </div>
-
             </div>
         </div>
     );
