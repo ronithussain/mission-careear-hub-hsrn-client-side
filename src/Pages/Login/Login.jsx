@@ -3,6 +3,7 @@ import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import SocialLogin from "../Shared/socialLogin/SocialLogin";
 
 
 
@@ -32,19 +33,18 @@ const Login = () => {
                         popup: `
                         animate__animated
                         animate__fadeInUp
-                        animate__faster
-                      `
+                        animate__faster `
                     },
                     hideClass: {
                         popup: `
                         animate__animated
                         animate__fadeOutDown
-                        animate__faster
-                      `
+                        animate__faster `
                     }
                 });
                 navigate(from, {replace: true});
             })
+            .catch(err => console.log(err.message));
     }
     return (
         <>
@@ -84,6 +84,10 @@ const Login = () => {
                                     <div className="text-right">
                                         <a className="text-pink-300 hover:underline">Forgot password?</a>
                                     </div>
+
+                                    <div className="divider"></div>
+
+                                    <SocialLogin></SocialLogin>
 
                                     <button type="submit"
                                         className="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 transform">

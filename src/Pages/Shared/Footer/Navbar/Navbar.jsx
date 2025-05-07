@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <div className='bg-base-100 shadow-sm'>
-            <div className="max-w-screen-xl mx-auto navbar flex items-center justify-between px-4 md:px-8">
+            <div className="max-w-screen-xl mx-auto navbar flex items-center justify-between px-3 md:px-8">
 
                 {/* Logo Section */}
                 <div className="flex items-center">

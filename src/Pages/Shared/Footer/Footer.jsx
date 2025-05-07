@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
 
             {/* Footer Section */}
-            <footer className=" text-white  bg-opacity-80 backdrop-blur-lg bg-gray-900/80 z-50 py-14">
+            <footer className="   bg-opacity-80 backdrop-blur-lg bg-[#FFF9F9] z-50 py-14">
                 <div className="w-10/12 mx-auto md:px-10">
                     <div
                         data-aos="fade-up"
@@ -27,7 +27,7 @@ const Footer = () => {
 
                         {/* Movies Links */}
                         <div className='mt-2'>
-                            <h4 className="text-white font-semibold border-b-2 border-orange-600 pb-2">
+                            <h4 className=" font-semibold border-b-2 border-orange-600 pb-2">
                                 SERVICE
                             </h4>
                             <ul className="mt-4 space-y-2 flex flex-col">
@@ -38,7 +38,7 @@ const Footer = () => {
 
                         {/* Additional Links */}
                         <div className='mt-2'>
-                            <h4 className="text-white font-semibold border-b-2 border-orange-600 pb-2 inline-block">
+                            <h4 className=" font-semibold border-b-2 border-orange-600 pb-2 inline-block">
                                 ADDITIONAL
                             </h4>
                             <ul className="mt-4 space-y-2">
@@ -48,7 +48,7 @@ const Footer = () => {
 
                         {/* Newsletter and Social Media */}
                         <div className='mt-2'>
-                            <h4 className="text-white font-semibold border-b-2 border-orange-600 pb-2 inline-block">
+                            <h4 className=" font-semibold border-b-2 border-orange-600 pb-2 inline-block">
                                 NEWSLETTER
                             </h4>
                             <form className="mt-4">

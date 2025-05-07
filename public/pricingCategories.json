@@ -1,0 +1,60 @@
+[
+    {
+      "_id": "66348d8f1a2b3c0012a1a111",
+      "title": "Starter",
+      "description": "Get started with our Starter Sanitizing Package to ensure your space is clean and safe.",
+      "price": 29,
+      "duration": "Mon",
+      "features": [
+        "Booking",
+        "Own Cover Image on Provider Page",
+        "5 Project At least",
+        "More Locations (Branches)",
+        "Apply for Job",
+        "Contact Numbers",
+        "STAFF MEMBERS",
+        "442 Free Templates",
+        "QR Code",
+        "Invoice"
+      ]
+    },
+    {
+      "_id": "66348d8f1a2b3c0012a1a112",
+      "title": "Professional",
+      "description": "Unlock all professional features to grow your presence and client trust.",
+      "price": 59,
+      "duration": "Mon",
+      "features": [
+        "Everything in Starter",
+        "10 Projects",
+        "Advanced Analytics",
+        "Priority Support",
+        "Verified Badge",
+        "Social Media Boost",
+        "Client Review Management",
+        "442 Free Templates",
+        "QR Code",
+        "Invoice"
+      ]
+    },
+    {
+      "_id": "66348d8f1a2b3c0012a1a113",
+      "title": "Enterprise",
+      "description": "Ultimate package for large businesses with full-scale access and team collaboration.",
+      "price": 99,
+      "duration": "Mon",
+      "features": [
+        "Everything in Professional",
+        "Unlimited Projects",
+        "Dedicated Account Manager",
+        "Team Collaboration Tools",
+        "API Access",
+        "Custom Branding",
+        "Enterprise Level Security",
+        "442 Free Templates",
+        "QR Code",
+        "Invoice"
+      ]
+    }
+  ]
+  

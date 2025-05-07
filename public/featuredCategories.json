@@ -1,0 +1,39 @@
+[
+    {
+      "_id": "66363e1f1b4c2a8a0d3b1234",
+      "category": "Cleaning",
+      "location": "New York, USA",
+      "rating": 4.5,
+      "title": "Office Cleaning Service From Best Cleaner",
+      "price": {
+        "current": 24.00,
+        "original": 32.00
+      },
+      "image": "https://i.ibb.co.com/wZz26bsw/2149241216.jpg"
+    },
+    {
+      "_id": "66363e1f1b4c2a8a0d3b1235",
+      "category": "Cleaning",
+      "location": "Los Angeles, USA",
+      "rating": 4.7,
+      "title": "Professional Home Cleaning Experts",
+      "price": {
+        "current": 29.99,
+        "original": 39.99
+      },
+      "image": "https://i.ibb.co.com/CpQ8yjL6/2149367126.jpg"
+    },
+    {
+      "_id": "66363e1f1b4c2a8a0d3b1236",
+      "category": "Construction",
+      "location": "Chicago, USA",
+      "rating": 4.6,
+      "title": "Top-Rated Carpet Cleaning Service",
+      "price": {
+        "current": 19.50,
+        "original": 27.00
+      },
+      "image": "https://i.ibb.co.com/Fkg08rtx/2149241215.jpg"
+    }
+  ]
+  
